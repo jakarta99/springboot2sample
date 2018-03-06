@@ -7,15 +7,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class HelloController {
 	
-	@ResponseBody
 	@RequestMapping("/")
 	public String index() {
-		return "Home";
+		return "/WEB-INF/pages/index.jsp";
 	}
 
-	@ResponseBody
-	@RequestMapping("/hello")
-	public String hello() {
-		return "Hello SpringBoot 2.0";
-	}
 }
